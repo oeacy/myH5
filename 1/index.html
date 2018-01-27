@@ -3,8 +3,37 @@
 		<meta charset="utf-8">
 		<title></title>
    <style type='text/css'>
-    body{
-        backgroud:green;
+
+	   @keyframes myfirst
+	   {
+		   from {background: red;}
+		   to {background: yellow;}
+	   }
+
+	   @-moz-keyframes myfirst /* Firefox */
+	   {
+		   from {background: red;}
+		   to {background: yellow;}
+	   }
+
+	   @-webkit-keyframes myfirst /* Safari 和 Chrome */
+	   {
+		   from {background: red;}
+		   to {background: yellow;}
+	   }
+
+	   @-o-keyframes myfirst /* Opera */
+	   {
+		   from {background: red;}
+		   to {background: yellow;}
+	   }
+	   h1{
+
+		animation: myfirst 5s infinite;
+		-moz-animation: myfirst 5s infinite;	/* Firefox */
+		-webkit-animation: myfirst 5s infinite;	/* Safari 和 Chrome */
+		-o-animation: myfirst 5s infinite;	/* Opera */
+
     }
    </style>
 	</head>
